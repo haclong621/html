@@ -1,93 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta name="description" content="">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 <style>
 
-	.myDiv1 {						/* Heater */
-  		border: 5px outset red;
-  		float: top;
-  		height: 200px;
-  		margin-right: 300px;
-  		margin-left: 300px;
-  		text-align: center
-		}
+
 
     .myDiv2 {						/* Left */
     	border: 5px outset green;
     	float: left;
         margin-top: -210px;
-  		height: 1000px;
+  		height: 1500px;
   		width: 275px;
-  		text-align: center
+  		text-align: center;
 		}
 
     .myDiv3	{						/* Right */
     	border: 5px outset blue;
     	float: right;
         margin-top: -210px;
-  		height: 1000px;
+  		height: 1500px;
   		width: 275px;
   		text-align: center
 		}
 
-    .myDiv4	{						/* Center */
-    	border: 5px outset orange;
-		margin-bottom: 0;
-		height: 790px;
-		margin-left: 300px;
-		margin-right: 300px;
-		text-align: center
-		}
 
-  	.myDiv5	{						/* Footer */
-    	border: 5px outset pink;
-		margin-top: 10px;
-		margin-bottom: 5px;
-  		height: 200px;
-  		text-align: center
-		}
 
-    .col-md-4 {
-    	float: left;
-		max-width: 30%;
-		margin-left: 1.5333%;
-		margin-right: 1.5333%;
-		margin-top: 1.53333%;
-		margin-bottom: 1.5333%;
-		height: 30%;
-        }
-
-    .card {
-        min-width: 0;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0,0,0,.125);
-        border-radius: 0.25rem;
-    	}
-    .card-body {
-    	padding: 1.25rem;
-        }
-
-    .body {
-      	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-    	font-size: 1rem;
-    	font-weight: 400;
-   		line-height: 1.5;
-    	color: #212529;
-    	text-align: left;
-    	background-color: #fff;
-		}
-
-    .card-img-top {
-    	width: 100%;
-   		border-top-left-radius: calc(0.25rem - 1px);
-    	border-top-right-radius: calc(0.25rem - 1px);
-        }
-
-    .small	{
-    	font-size: 50%;
-		}
 
 
 
@@ -99,180 +43,228 @@
 </head>
 <body>
 
-<div class="myDiv1">								<!-- Heater -->
-    <h1>Heater</h1>
-  	<p>text in a div element.</p>
-</div>
+	<header>
+		<div class="bg-dark collapse show" id="navbarHeader" style="margin-left:300px; margin-right:300px" style>
+			<div class="container" style="margin-left:0px; margin-right: 0px; width: 100%">
 
-<div class="myDiv2">								<!-- Left -->
-  	<h2>Left columm</h2>
-  	<p>This is some text in a div element.</p>
-</div>
+				<div class="row" >
+					<div class="col-sm-8 col-md-8 py-2" style="margin-left:0px">
+    					<h1 class="text-white"> About </h1>
+  						<p class="text-muted">
+					"Add some infermation about the album below, the auther, or any orhter background context. Make it a few sentences long to folks can pick up some information tidbits. Then, link them off to some social networking sites, or contact information."
+						</p>
+				</div>
 
-<div class="myDiv3">								<!-- Right -->
-  	<h3>Right columm</h3>
-  	<p>This is some text in a div element.</p>
-</div>
+					<div class="col-sm-4 py-2">
+						<h1 class="text-white">Contact</h1>
+						<ul class="list-unstyled">
+							<li> <a href="#" class="text-white"> Follow onTwitter</a></li>
+							<li> <a href="#" class="text-white"> Like in facebook</a></li>
+							<li> <a href="#" class="text-white"> Email me</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
-<div class="myDiv4">								<!-- Center -->
+		<div class="navbar navbar-dark bg-dark" style="margin-left:300px; margin-right: 300px">
+			<div class="container d-flex justify-content-between">
+				<a href="#" class="navbar-brand d-flex align-items-center">
+				  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+				  <strong>Album</strong>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+				  	<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+		</div>
+	</header>
 
 
+	<main>
 
-    			<div class="col-md-4">
-            			<div class="card box-shadow">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:100%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card box-shadow">
-        					<div class="card-body">
+
+		<div class="container" style="float: left;margin-top: -210px;height: 2000px;width: 275px;">								<!-- Left -->
+  			<h2>Left columm</h2>
+  			<p>This is some text in a div element.</p>
+		</div>
+
+		<div class="container" style="float: right;margin-top: -210px;height: 2000px;	width: 275px;">								<!-- Right -->
+  			<h3>Right columm</h3>
+  			<p>This is some text in a div element.</p>
+		</div>
+
+
+										<!-- Center -->
+			<section class="jumbotron text-center" style="margin-left:300px; margin-right: 300px">
+				<div class="container">
+					<h1 class="jumbotron-header"> Album Example</h1>
+					<p class="lead text-muted"> "Something short and leading about the collection below-its content, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirly"</p>
+					<p>
+						<a href="#" class="btn btn-primary my-2"> Main call to action</a>
+						<a href="#" class="btn btn-secondary my-2">Secondary action</a>
+				</div>
+			</section>
+
+			<div class="album py-5 bg-light">
+				<div class="row" >
+
+    				<div class="col-md-4">
+            			<div class="card">
+    					 <img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+							<div class=" card box-shadow">
+        						<div class="card-body">
             						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
                 					</p>
-                            				<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            				<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            				<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
             					</div>
-        				</div>
-    				</div>
-			</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class="card ">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card">
-        				<div class="card-body">
-            				<p class="body small">
+            		<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 40%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-           <div class="col-md-4">
-            	<div class="card">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card box-shadow">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card ">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card ">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card ">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
-			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
 
-            <div class="col-md-4">
-            	<div class=" card ">
-    				<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="height:33.33%; width: 100%; display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-					<div class=" card ">
-        				<div class="card-body">
-            				<p class="body small">
+					<div class="col-md-4">
+            			<div class="card">
+							<img class="card-img-top" src="https://images.fpt.shop/unsafe/filters:quality(5)/fptshop.com.vn/uploads/images/tin-tuc/141134/Originals/youtube-01.jpg" alt="Thumbnail [100%x225]" style="display: block;" src="data:image/svg+xml;charset=…%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">							<div class=" card box-shadow">
+        						<div class="card-body">
+            						<p class="body small">
                 			This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                			</p>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
-                            <button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
-                            <p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
-            			</div>
-        			</div>
-    			</div>
+                					</p>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">View</button>
+                            			<button onclick="..." style="float: bottom; float: left; font-size:20%;">Edit</button>
+                            			<p style="float: bottom; float: right; font-size: 50%"> 9 minutes </p>
+            					</div>
+        					</div>
+    					</div>
+					</div>
+
+
+				</div>
 			</div>
 
+	</main>
 
+	<footer>								<!-- Footer -->
+		<div class="container" style="margin-left:auto; margin-right:auto; width:100% ;margin-top: 10px; margin-bottom: 5px; height:200px">
+			<p style="float:right;">
+				<a href="#" > Back to top</a></p>
+			<p>Album example is @ Bootstrap , but please download and customize it for yourseklf
+			</p>
+			<p>New Bootstrap?
+				<a href="#"> Visit the homepage</a>
+				or read our
+				<a href="#" >getting started guide</a>
+			</p>
+		</div>
 
-
-</div>
-
-
-<div class="myDiv5">								<!-- Footer -->
-  	<h4>Footer</h4>
-  	<p>This is some text in a div element.</p>
-</div>
-
+	</footer>
 </body>
 </html>
 
